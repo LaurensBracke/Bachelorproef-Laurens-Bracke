@@ -5,6 +5,16 @@
 % Auteur: Jens Buysse, Bert Van Vreckem
 
 \documentclass[fleqn,10pt]{voorstel}
+\usepackage[english,dutch]{babel}
+
+\usepackage[backend=biber,style=apa]{biblatex}
+\DeclareLanguageMapping{dutch}{dutch-apa}
+\addbibresource{voorstel.bib}
+
+\usepackage{lipsum}
+
+\usepackage{hyperref} % Required for hyperlinks
+\hypersetup{hidelinks,colorlinks,breaklinks=true,urlcolor=color1,citecolor=color2,linkcolor=color2,bookmarksopen=false,pdftitle={Title},pdfauthor={Author}}
 
 %------------------------------------------------------------------------------
 % Metadata over het voorstel
@@ -16,24 +26,17 @@
 %---------- Titel & auteur ----------------------------------------------------
 
 % TODO: geef werktitel van je eigen voorstel op
-\PaperTitle{Titel voorstel}
+\PaperTitle{Effect van devices (BYOD) op leerkracht en student}
 \PaperType{Onderzoeksvoorstel Bachelorproef} % Type document
 
 % TODO: vul je eigen naam in als auteur, geef ook je emailadres mee!
-\Authors{Steven Stevens\textsuperscript{1}} % Authors
-\CoPromotor{Piet Pieters\textsuperscript{2} (Bedrijfsnaam)}
+\Authors{Laurens Bracke (3B1) \textsuperscript{1}} % Authors
 \affiliation{\textbf{Contact:}
-  \textsuperscript{1} \href{mailto:steven.stevens.u1234@student.hogent.be}{steven.stevens.u1234@student.hogent.be};
-  \textsuperscript{2} \href{mailto:piet.pieters@acme.be}{piet.pieters@acme.be};
-}
+	\textsuperscript{1} \href{mailto:laurens.bracke.w1090@student.hogent.be}{laurens.bracke.w1090@student.hogent.be}}
 
 %---------- Abstract ----------------------------------------------------------
 
-\Abstract{Hier schrijf je de samenvatting van je voorstel, als een doorlopende tekst van één paragraaf. Wat hier zeker in moet vermeld worden: \textbf{Context} (Waarom is dit werk belangrijk?); \textbf{Nood} (Waarom moet dit onderzocht worden?); \textbf{Taak} (Wat ga je (ongeveer) doen?); \textbf{Object} (Wat staat in dit document geschreven?); \textbf{Resultaat} (Wat verwacht je van je onderzoek?); \textbf{Conclusie} (Wat verwacht je van van de conclusies?); \textbf{Perspectief} (Wat zegt de toekomst voor dit werk?).
-
-Bij de sleutelwoorden geef je het onderzoeksdomein, samen met andere sleutelwoorden die je werk beschrijven.
-
-Vergeet ook niet je co-promotor op te geven.
+\Abstract{Studenten aan de hogeschool hebben tegenwoordig een volledig arsenaal aan elektronische apparaten bij zich als ze naar school komen: een smartphone in de jas, een tablet en een laptop in de rugzak en vaak nog een desktop thuis. Soms is dit een verplichting van de studierichting, soms is het noodzakelijk voor taken en soms is het gewoon een 'extra' cadeautje voor zichzelf. Maar wat heeft nu welke student bij zich? En heeft het meepakken van al deze apparaten naar de les wel zijn nut? Het doel van deze opdracht is om via enquêtes  (gericht aan studenten in het hoger onderwijs) en een testopstelling te weten te komen wat zij dagelijks meebrengen naar de les, wat ze werkelijk gebruiken tijdens de les en of deze hun helpen om betere punten te behalen en hun aandacht bij de les te houden. Het hoofddoel is om met al deze gegevens te onderzoeken of het concept BYOD (Bring Your Own Device) de studenten (en de scholen) wel degelijk vooruithelpt, en wat de studenten zelf vinden van de scholen hun politiek over smartphones en laptops in de les. Mogelijke deelvragen: Hoe gaan Nederlandse scholen om met apparaten van hun studenten, kunnen vrouwen beter hun focus houden dan mannen met al deze verleidelijke elektronica en sociale media rond hen, kunnen studenten uit technische richtingen meer hun aandacht bij de les houden, moeten scholen meer inspringen op de apparatuur van hun leerlingen en interactievere lessen aanbieden... De verwachting is dat deze apparaten hun nut hebben bij praktijklessen die strikt gestuurd worden door de leerkracht, maar dat bij theorielessen beter het bovenhalen van smartphones of laptops verboden beperkt wordt. Scholen kunnen verder uit dit onderzoek halen wat de noden zijn voor de studenten, wat noden zijn voor zichzelf en of het niet beter is voor de scores van de studenten om betere regels te maken voor de hele school voor het gebruik van eigen devices. Ook kan dit resultaat dienen voor bedrijven, die het BYOD-principe willen toepassen op hun werknemers en deze strikter willen opvolgen.
 }
 
 %---------- Onderzoeksdomein en sleutelwoorden --------------------------------
@@ -55,7 +58,7 @@ Vergeet ook niet je co-promotor op te geven.
 %
 % De andere sleutelwoorden zijn vrij te kiezen
 
-\Keywords{Onderzoeksdomein. Keyword1 --- Keyword2 --- Keyword3} % Keywords
+\Keywords{Systeembeheer. Hardware --- Studenten --- Devices} % Keywords
 \newcommand{\keywordname}{Sleutelwoorden} % Defines the keywords heading name
 
 %---------- Titel, inhoud -----------------------------------------------------
