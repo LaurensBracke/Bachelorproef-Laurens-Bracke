@@ -1,0 +1,79 @@
+%%=============================================================================
+%% Conclusie
+%%=============================================================================
+
+\chapter{Vragen en Antwoorden Praktijktest}
+\label{ch:qenapraktijk}
+
+\begin{enumerate}
+	\item Wat stelt de uitvoerparameter van de methode  hashcode() voor?
+	\item Op welke manier wordt het woordenboek van de 2-letterwoorden opgeslagen?
+	\item Wat is de tijdscomplexiteit van de methode zoekOp() in de klasse Woordenboek?
+	\begin{enumerate}
+		\item $ \theta (0) $
+		\item $ \theta (1) $
+		\item $ \theta (n) $
+		\item $ \theta ( n^2 ) $		
+	\end{enumerate}
+	\item In een hashtabel voorzien we N posities.  Het totaal aantal woorden stellen we voor door n.  Hoe verhoudt zich n tot N?
+	\begin{enumerate}
+		\item n < N
+		\item n = N
+		\item n > N		
+	\end{enumerate}
+	\item Waarom gebruikt men bij de berekening van de hashcode  mod N?
+	\item Wat doet de methode hashFunctie()?
+	\begin{enumerate}
+		\item Berekent de hashcode.
+		\item Zet de key (woord) om in een correcte positie.
+		\item Bepaalt de value van een woord.	
+	\end{enumerate}
+	\item Met welk probleem kan men bij hashing te kampen hebben?
+	\begin{enumerate}
+		\item Overflow
+		\item Out of reach
+		\item Collisions	
+	\end{enumerate}
+	\item Wat betekent open hashing?
+	\begin{enumerate}
+		\item Elementen worden opgeslagen in de tabel.
+		\item Elementen worden opgeslagen buiten de tabel.
+		\item Elementen worden bij dubbels overschreven.	
+	\end{enumerate}
+	\item Wat is het verschil tussen een efficiënte en een inefficiënte hashfunctie?
+	\begin{enumerate}
+		\item Bij een efficiënte functie worden de hashcodes gelijk verdeeld over alle posities van de tabel, bij een inefficiënte hashfunctie worden de hashcodes volgens hun waarde geplaatst.
+		\item Bij een efficiënte functie komen alle woorden in dezelfde gelinkte lijst, bij een inefficiënte functie gebruikt men een dubbelgelinkte lijst.
+		\item Bij een inefficiënte functie hebben we een lineaire uitvoeringstijd bij het opzoeken, bij een efficiënte functie hebben we een constante uitvoeringstijd.
+	\end{enumerate}
+	\item Bij gesloten hashing wordt bij overlapping:
+	\begin{enumerate}
+		\item doorgeschoven naar de volgende vrije positie 
+		\item doorgeschoven naar de eerste positie
+		\item de tabel dynamisch groter gemaakt
+	\end{enumerate}
+\end{enumerate}
+
+\emph{ANTWOORDEN:}
+
+1. Een UNIEK getal.
+
+2. Als een array van 676 elementen waarbij elk element een array is van 2 getallen tussen 0 en 25.
+
+3. b
+
+4. c
+
+5. Omdat N de grootte van de tabel is.
+
+6. b
+
+7. c
+
+8. b
+
+9. a en c
+
+10. a
+
+
